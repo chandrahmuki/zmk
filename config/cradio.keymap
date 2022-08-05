@@ -54,8 +54,16 @@
             key-positions = <17 18>;
             bindings = <&kp RGUI>;
         };
-        
-
+                         combo_bootloaderLeft {
+            timeout-ms = <50>;
+            key-positions = <12 13 14>;
+            bindings = <&bootloader>;
+        };
+                  combo_bootloaderRight {
+            timeout-ms = <50>;
+            key-positions = <17 18 19>;
+            bindings = <&bootloader>;
+        };
         
     };
 
@@ -66,8 +74,8 @@
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt FSLH ESC
-          				&mo 1 &kp SPC  				&mt LSFT RET &mo 2 
+		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &kp FSLH
+          				&mo 1 &mt LCTL SPC  				&mt LSFT RET &mo 2 
 		>;
 		};
 
@@ -75,8 +83,8 @@
 		bindings = <
 		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
 		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH  &bt BT_CLR  &bootloader 	&bootloader &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
+		&kp ESC    &kp TILDE 	&kp NON_US_BSLH  &bt BT_CLR  &trans 	        &trans &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
+					    &mo 1  &kp LGUI  				     &kp RGUI &mo 2 
 		>;
 		};
 		
